@@ -1,5 +1,8 @@
 package com.example.addressbook.model;
 
+/**
+ * A simple model class representing a contact with a first name, etc.
+ */
 public class Contact {
     private int id;
     private String firstName;
@@ -7,6 +10,13 @@ public class Contact {
     private String email;
     private String phone;
 
+    /**
+     *
+     * @param firstName
+     * @param lastName
+     * @param email
+     * @param phone
+     */
     public Contact(String firstName, String lastName, String email, String phone) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -25,6 +35,11 @@ public class Contact {
     public String getFirstName() {
         return firstName;
     }
+
+    /**
+     *
+     * @returns firstName
+     */
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
